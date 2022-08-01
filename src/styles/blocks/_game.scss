@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+
 .game {
   background-color: #3cc050;
   height: 100vh;
@@ -8,29 +10,40 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    -webkit-box-reflect: below -20px
+      linear-gradient(transparent, rgba(0,0,0,0.2));
     font-size: 60px;
   }
 
   .game__title span {
-    font-family: 'Alfa Slab One', cursive;
+    font-family: "Alfa Slab One", cursive;
     position: relative;
     display: inline-block;
     color: #fff;
     animation: game__title 1s infinite;
-    animation-delay: calc(.1s * var(--i));
+    animation-delay: calc(0.1s * var(--i));
   }
 
   @keyframes game__title {
-    0%,40%,100% {
-      transform: translateY(0)
+    0%,
+    40%,
+    100% {
+      transform: translateY(0);
     }
     20% {
-      transform: translateY(-20px)
+      transform: translateY(-20px);
     }
   }
 
   &__display {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  &__display1 {
     color: white;
     font-size: 25px;
     text-align: center;
@@ -63,8 +76,4 @@
     margin-left: 1em;
     cursor: pointer;
   }
-
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
-

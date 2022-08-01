@@ -4,7 +4,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const tiles = Array.from(document.querySelectorAll('.tile'));
   const playerDisplay = document.querySelector('.display-player');
   const resetButton = document.querySelector('#reset');
-  const announcer = document.querySelector('.announcer');
+  const announcer = document.querySelector('.game__display1');
 
   let board = ['', '', '', '', '', '', '', '', ''];
   let currentPlayer = 'X';
@@ -65,7 +65,7 @@ window.addEventListener('DOMContentLoaded', () => {
         announcer.innerHTML = 'Player <span class="playerX">X</span> is Winner';
         break;
       case TIE:
-        announcer.innerText = 'Tie';
+        announcer.innerText = 'Try again';
     }
     announcer.classList.remove('hide');
   };
