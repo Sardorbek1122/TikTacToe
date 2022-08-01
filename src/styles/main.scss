@@ -1,7 +1,31 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "./blocks/game";
+@import "./blocks/container";
+@import "./blocks/footer";
 
-body {
-  background: $c-gray;
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.playerX {
+  color: #090fc3;
+}
+
+.playerO {
+  color: #bf1111;
+}
+
+.restart {
+  background-color: #8097c0;
+}
+
+#reset {
+  background-color: #0883a5;
 }
